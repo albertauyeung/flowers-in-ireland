@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Flowers in Ireland — A Multilingual Wildflower Guide for Kids</title>
+  <meta name="description" content="Discover 80 wildflowers you can spot in Ireland — bluebells, primroses, foxgloves, gorse and more. Kid-friendly descriptions, photos and where-to-find guides in 6 languages: English, 華文, 粵語, Français and Español." />
+  <meta name="keywords" content="flowers of Ireland, Irish wildflowers, wildflower identification, kids wildflower guide, multilingual flower app, bluebell, primrose, foxglove, Burren flora, kids learning, botany for children" />
+  <meta name="author" content="Flowers in Ireland" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://albertauyeung.github.io/flowers-in-ireland/" />
+  <link rel="alternate" hreflang="en" href="https://albertauyeung.github.io/flowers-in-ireland/" />
+  <link rel="alternate" hreflang="x-default" href="https://albertauyeung.github.io/flowers-in-ireland/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://albertauyeung.github.io/flowers-in-ireland/" />
+  <meta property="og:title" content="Flowers in Ireland — A Multilingual Wildflower Guide for Kids" />
+  <meta property="og:description" content="Discover 80 wildflowers of Ireland with photos, fun facts and pronunciation guides — in English, 華文, 粵語, Français and Español." />
+  <meta property="og:site_name" content="Flowers in Ireland" />
+  <meta property="og:locale" content="en_IE" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="yue_HK" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Flowers in Ireland — A Multilingual Wildflower Guide for Kids" />
+  <meta name="twitter:description" content="Discover 80 wildflowers of Ireland with photos, fun facts and pronunciation guides — in 6 languages." />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://en.wikipedia.org" />
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌼%3C/text%3E%3C/svg%3E" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Flowers in Ireland",
+    "url": "https://albertauyeung.github.io/flowers-in-ireland/",
+    "description": "A multilingual web app for kids aged 5–12 to discover 80 wildflowers you can find in Ireland, with kid-friendly descriptions, photos, pronunciation guides and botanical hotspots.",
+    "inLanguage": ["en", "zh-Hant", "zh-Hans", "yue", "fr", "es"],
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": "children aged 5–12"
+    },
+    "about": [
+      {"@type": "Thing", "name": "Wildflowers of Ireland"},
+      {"@type": "Thing", "name": "Botany"},
+      {"@type": "Thing", "name": "Children's education"}
+    ]
+  }
+  </script>
+
+  <!-- Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="0c30afdf-7301-47b0-8a70-24b0a10719ca"></script>
+</head>
+<body>
+  <header class="site-header">
+    <button class="brand" data-nav="gallery" aria-label="Home">
+      <span class="brand-emoji" aria-hidden="true">🌼</span>
+      <span class="brand-text" data-i18n="appTitle">Flowers in Ireland</span>
+    </button>
+    <nav class="main-nav" aria-label="Main">
+      <button data-nav="gallery" data-i18n="navFlowers">Flowers</button>
+      <button data-nav="quiz" data-i18n="navQuiz">Quiz</button>
+      <button data-nav="spots" data-i18n="navSpots">Where to find</button>
+      <button data-nav="about" data-i18n="navAbout">About</button>
+    </nav>
+    <div class="lang-picker">
+      <label for="lang-select" class="visually-hidden" data-i18n="chooseLanguage">Choose language</label>
+      <select id="lang-select" aria-label="Language">
+        <option value="en">English</option>
+        <option value="zh-Hant">華文（繁體）</option>
+        <option value="zh-Hans">华文 (简体)</option>
+        <option value="yue">粵語</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- GALLERY (landing page) -->
+    <section class="view view-gallery" data-view="gallery">
+      <h1 class="section-title" data-i18n="galleryTitle">Meet the flowers</h1>
+      <div class="stats-bar">
+        <div class="stat"><span class="stat-num" id="stat-flowers">0</span><span class="stat-label" data-i18n="statFlowers">flowers</span></div>
+        <div class="stat"><span class="stat-num" id="stat-langs">6</span><span class="stat-label" data-i18n="statLanguages">languages</span></div>
+        <div class="stat"><span class="stat-num" id="stat-spots">0</span><span class="stat-label" data-i18n="statSpots">hotspots</span></div>
+      </div>
+      <div class="filter-row">
+        <input type="search" id="flower-search" data-i18n-attr="placeholder:searchPlaceholder" placeholder="Search a flower..." />
+        <div class="chip-row" id="color-filter" role="group" aria-label="Filter by colour">
+          <button class="chip active" data-color="all" data-i18n="colorAll">All colours</button>
+          <button class="chip chip-yellow" data-color="yellow" data-i18n="colorYellow">Yellow</button>
+          <button class="chip chip-blue" data-color="blue" data-i18n="colorBlue">Blue / Purple</button>
+          <button class="chip chip-white" data-color="white" data-i18n="colorWhite">White</button>
+          <button class="chip chip-pink" data-color="pink" data-i18n="colorPink">Pink / Red</button>
+          <button class="chip chip-other" data-color="other" data-i18n="colorOther">Other</button>
+        </div>
+      </div>
+      <div class="filter-status" id="filter-status" aria-live="polite"></div>
+      <div id="gallery-grid" class="flower-grid"></div>
+    </section>
+
+    <!-- DETAIL -->
+    <section class="view view-detail" data-view="detail" hidden>
+      <button class="btn btn-back" data-action="back">
+        <span aria-hidden="true">←</span> <span data-i18n="back">Back</span>
+      </button>
+      <article id="flower-detail" class="flower-detail"></article>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="view view-quiz" data-view="quiz" hidden>
+      <h1 class="section-title" data-i18n="quizTitle">Match the flower!</h1>
+      <p class="quiz-sub" data-i18n="quizSub">Look at the photo and tap the right name. Ready?</p>
+      <div id="quiz-area" class="quiz-area"></div>
+    </section>
+
+    <!-- SPOTS -->
+    <section class="view view-spots" data-view="spots" hidden>
+      <h1 class="section-title" data-i18n="spotsTitle">Where to find flowers in Ireland</h1>
+      <p class="lead" data-i18n="spotsLead">Bring a notebook, walk slowly, and look down at your feet! Here are great places around the island for spotting wildflowers.</p>
+      <div id="spots-list" class="spots-list"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="view view-about" data-view="about" hidden>
+      <h1 class="section-title" data-i18n="aboutTitle">About this app</h1>
+      <div class="about-content">
+        <p data-i18n="aboutP1">This is a fun place for kids aged 5–12 to discover the wildflowers you can see in Ireland — at the side of a path, in a meadow, on a bog, or up on the cliffs by the sea.</p>
+        <p data-i18n="aboutP2">All photos shown are loaded from Wikimedia Commons, where photographers and volunteers share pictures with open licences. We always link back to the original page so you can see who took the photo.</p>
+        <p class="warn" data-i18n="aboutP3">⚠️ Some wildflowers are poisonous if eaten or touched — always look with your eyes, and never pick or taste a wild plant unless a grown-up who knows plants says it's safe.</p>
+        <h2 data-i18n="aboutSourcesTitle">Where the data comes from</h2>
+        <ul class="sources">
+          <li><a href="https://www.irishwildflowers.ie/" target="_blank" rel="noopener">Irish Wildflowers</a> — Zoë Devlin's photographic guide to over 800 species</li>
+          <li><a href="https://biodiversityireland.ie/" target="_blank" rel="noopener">National Biodiversity Data Centre</a> — citizen science records</li>
+          <li><a href="https://bsbi.org/maps-and-data" target="_blank" rel="noopener">BSBI Plant Atlas 2020</a> — distribution data for Britain &amp; Ireland</li>
+          <li><a href="https://www.botanicgardens.ie/" target="_blank" rel="noopener">National Botanic Gardens of Ireland</a> — Irish flora reference</li>
+          <li><a href="https://burrenbeo.com/the-burren/natural-heritage/flora/" target="_blank" rel="noopener">Burrenbeo Trust</a> — Burren flora</li>
+          <li><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> — photos used in this app</li>
+          <li><a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> — &ldquo;Learn more&rdquo; links</li>
+        </ul>
+        <p class="small" data-i18n="aboutCredit">Made with love for curious young botanists. 🌷</p>
+      </div>
+
+      <section class="feedback-section" id="feedback-section" hidden>
+        <h2 data-i18n="feedbackTitle">Got feedback?</h2>
+        <p class="lead" data-i18n="feedbackLead">Spotted a mistake or want to suggest a flower? Send us a note — no account needed.</p>
+        <form id="feedback-form" class="feedback-form" novalidate>
+          <label class="visually-hidden" for="feedback-text" data-i18n="feedbackLabel">Your feedback</label>
+          <textarea id="feedback-text" name="feedback" required minlength="5" maxlength="5000" rows="5" data-i18n-attr="placeholder:feedbackPlaceholder" placeholder="Tell us what you found, what's missing, or what you'd love to see…"></textarea>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true" />
+          <div class="cf-turnstile-mount" id="feedback-turnstile"></div>
+          <button type="submit" class="btn btn-primary" data-i18n="feedbackSubmit">Send feedback</button>
+          <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <span data-i18n="footerCredit">Photos via Wikimedia Commons. Flower info adapted from Irish Wildflowers, BSBI &amp; Wikipedia.</span>
+    </p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/flowers.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
