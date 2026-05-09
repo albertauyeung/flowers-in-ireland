@@ -2329,6 +2329,733 @@ window.FLOWERS = [
       "fr": "De délicates fleurs blanches striées de rose et des feuilles à trois folioles comme un trèfle. Les feuilles ont un goût acide de citron ! Le « vrai » trèfle pour certains.",
       "es": "Delicadas flores blancas con rayitas rosas y hojas de tres folíolos como un tréfol. ¡Las hojas saben ácidas como el limón! Para algunos, el verdadero shamrock irlandés."
     }
+  },
+  {
+    id: "coltsfoot",
+    wiki: "Tussilago",
+    color: "#f9ca24",
+    colorCategory: "yellow",
+    heightCm: 25,
+    family: "Daisy",
+    familyLatin: "Asteraceae",
+    blooms: "Feb–Apr",
+    where: ["Bare ground and roadsides", "Stream banks", "Disturbed clay"],
+    names: {
+      "en": "Coltsfoot",
+      "zh-Hant": "款冬",
+      "zh-Hans": "款冬",
+      "yue": "款冬",
+      "fr": "Tussilage (pas-d'âne)",
+      "es": "Tusílago (uña de caballo)"
+    },
+    pronunciation: { pinyin: "kuǎn dōng", jyutping: "fun2 dung1" },
+    latin: "Tussilago farfara",
+    description: {
+      "en": "Bright yellow dandelion-like flowers pop up in late winter — before the leaves! The big hoof-shaped leaves come later, giving the plant its name.",
+      "zh-Hant": "鮮黃色的花像蒲公英一樣，在冬末就冒出來——而且葉子還沒長！後來才長出馬蹄形的大葉，名字就是這樣來。",
+      "zh-Hans": "鲜黄色的花像蒲公英一样，在冬末就冒出来——而且叶子还没长！后来才长出马蹄形的大叶，名字就是这样来。",
+      "yue": "鮮黃色嘅花好似蒲公英咁，冬末就伸出嚟——重要係葉未長住！之後先長馬蹄形嘅大葉，個名就係咁嚟。",
+      "fr": "Des fleurs jaune vif comme le pissenlit sortent en fin d'hiver — avant les feuilles ! Les grandes feuilles en forme de sabot viennent plus tard.",
+      "es": "Flores amarillas como dientes de león que aparecen a finales del invierno — ¡antes que las hojas! Las hojas grandes con forma de pezuña llegan después."
+    }
+  },
+  {
+    id: "wilddaffodil",
+    wiki: "Narcissus_pseudonarcissus",
+    color: "#ffd700",
+    colorCategory: "yellow",
+    heightCm: 35,
+    family: "Amaryllis",
+    familyLatin: "Amaryllidaceae",
+    blooms: "Feb–Apr",
+    poison: true,
+    where: ["Old woodlands", "Damp meadows", "Garden escapes"],
+    names: {
+      "en": "Wild Daffodil",
+      "zh-Hant": "黃水仙",
+      "zh-Hans": "黄水仙",
+      "yue": "黃水仙",
+      "fr": "Narcisse jaune",
+      "es": "Narciso amarillo"
+    },
+    pronunciation: { pinyin: "huáng shuǐ xiān", jyutping: "wong4 seoi2 sin1" },
+    latin: "Narcissus pseudonarcissus",
+    description: {
+      "en": "The classic golden trumpet of early spring — wild ones are smaller and paler than garden daffodils. Wordsworth's poem made these famous! All parts are poisonous.",
+      "zh-Hant": "早春最經典的金色號角花——野生的比花園品種小、顏色淡。詩人華茲華斯的詩讓它出了名！全株有毒。",
+      "zh-Hans": "早春最经典的金色号角花——野生的比花园品种小、颜色淡。诗人华兹华斯的诗让它出了名！全株有毒。",
+      "yue": "早春最經典嘅金色號角花——野生嗰啲比花園品種細，顏色淺。詩人華茲華斯首詩令佢出咗名！全棵都有毒。",
+      "fr": "Le classique trompette doré du début du printemps — les sauvages sont plus petits et plus pâles que ceux des jardins. Le poème de Wordsworth les a rendus célèbres ! Toxique.",
+      "es": "La clásica trompeta dorada del comienzo de la primavera — los silvestres son más pequeños y pálidos que los de jardín. ¡El poema de Wordsworth los hizo famosos! Toda la planta es tóxica."
+    }
+  },
+  {
+    id: "commontoadflax",
+    wiki: "Linaria_vulgaris",
+    color: "#f9ca24",
+    colorCategory: "yellow",
+    heightCm: 75,
+    family: "Plantain",
+    familyLatin: "Plantaginaceae",
+    blooms: "Jul–Oct",
+    where: ["Roadside verges", "Disturbed ground", "Railway banks"],
+    names: {
+      "en": "Common Toadflax",
+      "zh-Hant": "柳穿魚",
+      "zh-Hans": "柳穿鱼",
+      "yue": "柳穿魚",
+      "fr": "Linaire commune",
+      "es": "Linaria común"
+    },
+    pronunciation: { pinyin: "liǔ chuān yú", jyutping: "lau5 cyun1 jyu4" },
+    latin: "Linaria vulgaris",
+    description: {
+      "en": "Spikes of butter-yellow flowers with a bright orange spot in the middle — they look just like tiny snapdragons! Squeeze gently and the \"jaws\" open up.",
+      "zh-Hant": "穗狀的奶油黃色花，中間有亮橘色斑——長得像迷你金魚草！輕輕一捏，「嘴巴」就會張開。",
+      "zh-Hans": "穗状的奶油黄色花，中间有亮橘色斑——长得像迷你金鱼草！轻轻一捏，「嘴巴」就会张开。",
+      "yue": "穗狀嘅牛油黃色花，中間有鮮橙色斑——好似迷你金魚草！輕輕揸一下，「個嘴」就會打開。",
+      "fr": "Des épis de fleurs jaune beurre avec une tache orange vif au centre — comme de minuscules gueules-de-loup ! Appuie doucement et la « mâchoire » s'ouvre.",
+      "es": "Espigas de flores amarillo mantequilla con una mancha naranja brillante en el centro — ¡parecen pequeñas bocas de dragón! Aprieta suavemente y la «boca» se abre."
+    }
+  },
+  {
+    id: "yellowarchangel",
+    wiki: "Lamium_galeobdolon",
+    color: "#f5e050",
+    colorCategory: "yellow",
+    heightCm: 60,
+    family: "Mint",
+    familyLatin: "Lamiaceae",
+    blooms: "May–Jun",
+    where: ["Old woodland floors", "Hedge banks", "Shady damp ground"],
+    names: {
+      "en": "Yellow Archangel",
+      "zh-Hant": "黃花野芝麻",
+      "zh-Hans": "黄花野芝麻",
+      "yue": "黃花野芝麻",
+      "fr": "Lamier jaune",
+      "es": "Ortiga amarilla"
+    },
+    pronunciation: { pinyin: "huáng huā yě zhī ma", jyutping: "wong4 faa1 je5 zi1 maa4" },
+    latin: "Lamium galeobdolon",
+    description: {
+      "en": "Whorls of bright yellow hooded flowers shoot up around square stems in May. Like a dead-nettle, it looks like nettle but doesn't sting — a friend with no bite.",
+      "zh-Hant": "五月時，方形莖周圍輪狀地長出鮮黃色的帽子花。像死蕁麻一樣，外形像蕁麻但不會刺人——是個不咬人的朋友。",
+      "zh-Hans": "五月时，方形茎周围轮状地长出鲜黄色的帽子花。像死荨麻一样，外形像荨麻但不会刺人——是个不咬人的朋友。",
+      "yue": "五月嗰陣，方形莖周圍輪狀咁長出鮮黃色嘅帽子花。好似死蕁麻咁，外形似蕁麻但係唔會刺人——係個唔咬人嘅朋友。",
+      "fr": "Des verticilles de fleurs jaune vif en cagoule autour d'une tige carrée en mai. Comme l'ortie morte, ressemble à une ortie mais sans piquer.",
+      "es": "Verticilos de flores amarillas en capucha alrededor de un tallo cuadrado en mayo. Como la ortiga muerta, parece ortiga pero no pica."
+    }
+  },
+  {
+    id: "ladysmantle",
+    wiki: "Alchemilla",
+    color: "#c8d650",
+    colorCategory: "yellow",
+    heightCm: 45,
+    family: "Rose",
+    familyLatin: "Rosaceae",
+    blooms: "Jun–Aug",
+    where: ["Damp grassy banks", "Mountain meadows", "Old gardens (escapes)"],
+    names: {
+      "en": "Lady's Mantle",
+      "zh-Hant": "羽衣草",
+      "zh-Hans": "羽衣草",
+      "yue": "羽衣草",
+      "fr": "Alchémille",
+      "es": "Pie de león"
+    },
+    pronunciation: { pinyin: "yǔ yī cǎo", jyutping: "jyu5 ji1 cou2" },
+    latin: "Alchemilla mollis",
+    description: {
+      "en": "Frothy clouds of tiny lime-green flowers above scalloped, fan-like leaves. Drops of dew sit like silver beads on the leaves on dewy mornings — magical!",
+      "zh-Hant": "羽毛狀的扇形葉子上方，飄著一團團小小的萊姆綠色花。露珠像銀色珠子停在葉上——非常夢幻！",
+      "zh-Hans": "羽毛状的扇形叶子上方，飘着一团团小小的莱姆绿色花。露珠像银色珠子停在叶上——非常梦幻！",
+      "yue": "羽毛狀嘅扇形葉上面，浮住一團團細細嘅萊姆綠色花。露珠好似銀色珠仔咁停喺葉度——好夢幻！",
+      "fr": "Des nuages mousseux de minuscules fleurs vert tilleul au-dessus de feuilles en éventail. Les gouttes de rosée se posent comme des perles d'argent — magique !",
+      "es": "Nubes de florecitas verde lima sobre hojas en forma de abanico. ¡Las gotas de rocío se posan como perlas de plata — pura magia!"
+    }
+  },
+  {
+    id: "catsear",
+    wiki: "Hypochaeris_radicata",
+    color: "#f9ca24",
+    colorCategory: "yellow",
+    heightCm: 50,
+    family: "Daisy",
+    familyLatin: "Asteraceae",
+    blooms: "Jun–Sep",
+    where: ["Lawns and pasture", "Sandy verges", "Coastal dunes"],
+    names: {
+      "en": "Common Cat's-ear",
+      "zh-Hant": "貓兒菊",
+      "zh-Hans": "猫儿菊",
+      "yue": "貓兒菊",
+      "fr": "Porcelle enracinée",
+      "es": "Hierba del halcón"
+    },
+    pronunciation: { pinyin: "māo ér jú", jyutping: "maau1 ji4 guk1" },
+    latin: "Hypochaeris radicata",
+    description: {
+      "en": "Looks like a tall dandelion, but the stem is wiry and branched. Touch the rosette of leaves — they feel like a cat's furry ears!",
+      "zh-Hant": "看起來像高高的蒲公英，但莖細而分枝。摸摸地面上的葉叢——感覺像貓咪毛茸茸的耳朵！",
+      "zh-Hans": "看起来像高高的蒲公英，但茎细而分枝。摸摸地面上的叶丛——感觉像猫咪毛茸茸的耳朵！",
+      "yue": "睇落好似高高嘅蒲公英，但係條莖幼又會分枝。摸下地面嘅葉叢——感覺好似貓貓毛茸茸嘅耳仔！",
+      "fr": "Ressemble à un grand pissenlit, mais la tige est fine et ramifiée. Touche la rosette de feuilles — elles sont douces comme des oreilles de chat !",
+      "es": "Parece un diente de león alto, pero el tallo es fino y ramificado. ¡Toca la roseta de hojas — son suaves como las orejas de un gato!"
+    }
+  },
+  {
+    id: "autumnhawkbit",
+    wiki: "Scorzoneroides_autumnalis",
+    color: "#f9ca24",
+    colorCategory: "yellow",
+    heightCm: 40,
+    family: "Daisy",
+    familyLatin: "Asteraceae",
+    blooms: "Jul–Oct",
+    where: ["Lawns and pasture", "Roadside verges", "Old grassland"],
+    names: {
+      "en": "Autumn Hawkbit",
+      "zh-Hant": "秋鴉蔥",
+      "zh-Hans": "秋鸦葱",
+      "yue": "秋鴉蔥",
+      "fr": "Liondent d'automne",
+      "es": "Diente de león otoñal"
+    },
+    pronunciation: { pinyin: "qiū yā cōng", jyutping: "cau1 aa1 cung1" },
+    latin: "Scorzoneroides autumnalis",
+    description: {
+      "en": "When most flowers have given up, this golden one keeps shining well into autumn. Bumblebees and hoverflies love the late-season nectar.",
+      "zh-Hant": "當大多數的花都凋謝了，這朵金色的小花還持續到深秋發光。大黃蜂和食蚜蠅最愛這晚季的花蜜。",
+      "zh-Hans": "当大多数的花都凋谢了，这朵金色的小花还持续到深秋发光。大黄蜂和食蚜蝇最爱这晚季的花蜜。",
+      "yue": "當大部分嘅花都謝晒，呢朵金色嘅小花仲一路開到深秋。大黃蜂同食蚜蠅最鍾意呢啲遲開嘅花蜜。",
+      "fr": "Quand la plupart des fleurs ont fané, celle-ci continue à briller jusqu'en automne. Bourdons et syrphes adorent ce nectar tardif.",
+      "es": "Cuando casi todas las flores se han marchitado, esta dorada sigue brillando hasta el otoño. ¡Los abejorros y sírfidos adoran su néctar tardío!"
+    }
+  },
+  {
+    id: "yellowhornedpoppy",
+    wiki: "Glaucium_flavum",
+    color: "#f9ca24",
+    colorCategory: "yellow",
+    heightCm: 60,
+    family: "Poppy",
+    familyLatin: "Papaveraceae",
+    blooms: "Jun–Sep",
+    poison: true,
+    where: ["Shingle beaches", "Sea cliffs", "Coastal sand"],
+    names: {
+      "en": "Yellow Horned-poppy",
+      "zh-Hant": "黃花海罌粟",
+      "zh-Hans": "黄花海罂粟",
+      "yue": "黃花海罌粟",
+      "fr": "Glaucienne jaune",
+      "es": "Adormidera marina"
+    },
+    pronunciation: { pinyin: "huáng huā hǎi yīng sù", jyutping: "wong4 faa1 hoi2 jing1 suk1" },
+    latin: "Glaucium flavum",
+    description: {
+      "en": "A bright yellow poppy of pebbly beaches, with grey-green crinkly leaves. After flowering it grows ridiculously long curved seed-pods like cow horns!",
+      "zh-Hant": "卵石海灘上的鮮黃色罌粟，葉子灰綠且皺皺的。開花後會結出像牛角一樣彎彎長長的種莢——超誇張！",
+      "zh-Hans": "卵石海滩上的鲜黄色罂粟，叶子灰绿且皱皱的。开花后会结出像牛角一样弯弯长长的种荚——超夸张！",
+      "yue": "卵石海灘嘅鮮黃色罌粟，葉灰綠又皺。開完花會結出好似牛角咁彎又長嘅種莢——超誇張！",
+      "fr": "Un coquelicot jaune vif des plages de galets, aux feuilles vert-gris froissées. Après la floraison, il forme des gousses incroyablement longues et courbées comme des cornes !",
+      "es": "Una amapola amarilla brillante de playas de guijarros, con hojas gris-verdes arrugadas. ¡Tras florecer, forma vainas largas y curvas como cuernos de vaca!"
+    }
+  },
+  {
+    id: "fieldforgetmenot",
+    wiki: "Myosotis_arvensis",
+    color: "#7d8df7",
+    colorCategory: "blue",
+    heightCm: 30,
+    family: "Borage",
+    familyLatin: "Boraginaceae",
+    blooms: "Apr–Sep",
+    where: ["Arable fields", "Garden corners", "Disturbed ground"],
+    names: {
+      "en": "Field Forget-me-not",
+      "zh-Hant": "田勿忘草",
+      "zh-Hans": "田勿忘草",
+      "yue": "田勿忘草",
+      "fr": "Myosotis des champs",
+      "es": "Nomeolvides de campo"
+    },
+    pronunciation: { pinyin: "tián wù wàng cǎo", jyutping: "tin4 mat6 mong4 cou2" },
+    latin: "Myosotis arvensis",
+    description: {
+      "en": "The dry-land cousin of the water forget-me-not — smaller and paler, but just as charming. The pink buds open into sky-blue flowers as they grow.",
+      "zh-Hant": "勿忘草的旱地親戚——花更小、顏色更淡，但同樣討人喜愛。粉紅色的花苞展開後變成天藍色的花。",
+      "zh-Hans": "勿忘草的旱地亲戚——花更小、颜色更淡，但同样讨人喜爱。粉红色的花苞展开后变成天蓝色的花。",
+      "yue": "勿忘草嘅旱地親戚——花更細、顏色更淡，但係一樣咁得意。粉紅色嘅花蕾打開之後變成天藍色嘅花。",
+      "fr": "La cousine de terre sèche du myosotis des marais — plus petite et plus pâle, mais tout aussi charmante. Les boutons roses s'ouvrent en fleurs bleu ciel.",
+      "es": "El primo de tierra seca del nomeolvides de agua — más pequeño y pálido, pero igual de encantador. Los capullos rosas se abren en flores azul cielo."
+    }
+  },
+  {
+    id: "sweetviolet",
+    wiki: "Viola_odorata",
+    color: "#7d6bbf",
+    colorCategory: "blue",
+    heightCm: 12,
+    family: "Violet",
+    familyLatin: "Violaceae",
+    blooms: "Feb–Apr",
+    where: ["Hedge banks", "Woodland edges", "Old gardens"],
+    names: {
+      "en": "Sweet Violet",
+      "zh-Hant": "香堇菜",
+      "zh-Hans": "香堇菜",
+      "yue": "香堇菜",
+      "fr": "Violette odorante",
+      "es": "Violeta común"
+    },
+    pronunciation: { pinyin: "xiāng jǐn cài", jyutping: "hoeng1 gan2 coi3" },
+    latin: "Viola odorata",
+    description: {
+      "en": "Tiny violet (or sometimes white) flowers with a sweet, sweet smell — unlike the dog violet, which has none. One of the very first scents of spring!",
+      "zh-Hant": "小小的紫羅蘭（有時是白色），帶著甜甜的香氣——這正是和山堇菜不同之處。是春天最早的氣息之一！",
+      "zh-Hans": "小小的紫罗兰（有时是白色），带着甜甜的香气——这正是和山堇菜不同之处。是春天最早的气息之一！",
+      "yue": "細細嘅紫羅蘭（有時係白色），有甜甜嘅香氣——同山堇菜唔同就係呢度。係春天最早嘅氣味之一！",
+      "fr": "De minuscules fleurs violettes (parfois blanches) au parfum sucré — contrairement à la violette de Rivinus, qui n'a aucune odeur. L'un des tout premiers parfums du printemps !",
+      "es": "Diminutas flores violetas (a veces blancas) de aroma dulcísimo — al revés que la violeta de los perros, que no huele. ¡Uno de los primeros perfumes de la primavera!"
+    }
+  },
+  {
+    id: "lousewort",
+    wiki: "Pedicularis_sylvatica",
+    color: "#c44d8c",
+    colorCategory: "blue",
+    heightCm: 18,
+    family: "Broomrape",
+    familyLatin: "Orobanchaceae",
+    blooms: "Apr–Jul",
+    where: ["Wet heaths", "Acid grassland", "Bog edges"],
+    names: {
+      "en": "Lousewort",
+      "zh-Hant": "草地馬先蒿",
+      "zh-Hans": "草地马先蒿",
+      "yue": "草地馬先蒿",
+      "fr": "Pédiculaire des bois",
+      "es": "Pedicular de los bosques"
+    },
+    pronunciation: { pinyin: "cǎo dì mǎ xiān hāo", jyutping: "cou2 dei6 maa5 sin1 hou1" },
+    latin: "Pedicularis sylvatica",
+    description: {
+      "en": "Pretty pink hooded flowers crouching low on damp heaths. Like yellow rattle, it's a sneaky plant that steals food from the roots of grasses next door!",
+      "zh-Hant": "粉紅色的帽子花，低低地長在潮濕荒野上。像小鼻花一樣，它會偷偷從旁邊草的根偷取養分！",
+      "zh-Hans": "粉红色的帽子花，低低地长在潮湿荒野上。像小鼻花一样，它会偷偷从旁边草的根偷取养分！",
+      "yue": "粉紅色嘅帽子花，低低咁長喺潮濕荒野上。同小鼻花一樣，佢會偷偷哋由旁邊嘅草根度偷食物！",
+      "fr": "De jolies fleurs roses en cagoule, basses sur les landes humides. Comme le petit rhinanthe, c'est une plante malicieuse qui vole sa nourriture aux racines des herbes voisines !",
+      "es": "Bonitas flores rosas en capucha, agachadas en los brezales húmedos. ¡Como el sonajitas, roba alimento de las raíces de la hierba vecina!"
+    }
+  },
+  {
+    id: "sheepsbit",
+    wiki: "Jasione_montana",
+    color: "#5a4a9c",
+    colorCategory: "blue",
+    heightCm: 30,
+    family: "Bellflower",
+    familyLatin: "Campanulaceae",
+    blooms: "Jun–Sep",
+    where: ["Coastal cliffs", "Sandy heaths", "Dry stone walls"],
+    names: {
+      "en": "Sheep's-bit",
+      "zh-Hant": "山牧根草",
+      "zh-Hans": "山牧根草",
+      "yue": "山牧根草",
+      "fr": "Jasione des montagnes",
+      "es": "Botón azul"
+    },
+    pronunciation: { pinyin: "shān mù gēn cǎo", jyutping: "saan1 muk6 gan1 cou2" },
+    latin: "Jasione montana",
+    description: {
+      "en": "Pretty blue pom-pom flowers along Atlantic coasts. Looks a bit like devil's-bit scabious but is actually in the bellflower family — they fool everyone!",
+      "zh-Hant": "大西洋海岸邊的漂亮藍色毛球花。長得有點像山蘿蔔，其實它是風鈴草科——常常騙到大家！",
+      "zh-Hans": "大西洋海岸边的漂亮蓝色毛球花。长得有点像山萝卜，其实它是风铃草科——常常骗到大家！",
+      "yue": "大西洋海岸邊嘅靚藍色毛球花。樣有少少似山蘿蔔，但其實係風鈴草科——成日呃到大家！",
+      "fr": "De jolies fleurs en pompons bleus le long des côtes atlantiques. Ressemble à la succise mais appartient à la famille des campanules — ça trompe tout le monde !",
+      "es": "Bonitas flores en pompón azul a lo largo de la costa atlántica. Parece la mordisco del diablo pero pertenece a la familia de las campánulas — ¡engaña a todo el mundo!"
+    }
+  },
+  {
+    id: "comfrey",
+    wiki: "Symphytum_officinale",
+    color: "#9b59b6",
+    colorCategory: "blue",
+    heightCm: 120,
+    family: "Borage",
+    familyLatin: "Boraginaceae",
+    blooms: "May–Aug",
+    where: ["River banks", "Wet ditches", "Damp meadows"],
+    names: {
+      "en": "Common Comfrey",
+      "zh-Hant": "聚合草",
+      "zh-Hans": "聚合草",
+      "yue": "聚合草",
+      "fr": "Grande consoude",
+      "es": "Consuelda mayor"
+    },
+    pronunciation: { pinyin: "jù hé cǎo", jyutping: "zeoi6 hap6 cou2" },
+    latin: "Symphytum officinale",
+    description: {
+      "en": "Big bushy plant with drooping bell-flowers in cream, pink or purple — even on the same plant! Old name: \"knit-bone\", from a long-ago belief it healed broken bones.",
+      "zh-Hant": "高大叢生的植物，垂著鈴鐺花，奶油色、粉色或紫色都有——甚至同一株上都有！舊名「接骨」，源自古人相信它能接骨。",
+      "zh-Hans": "高大丛生的植物，垂着铃铛花，奶油色、粉色或紫色都有——甚至同一株上都有！旧名「接骨」，源自古人相信它能接骨。",
+      "yue": "高大叢生嘅植物，垂住鈴鐺花，奶油色、粉色定紫色都有——同一棵都有齊！舊名「接骨」，因為古人相信佢可以醫斷骨。",
+      "fr": "Une grande plante touffue aux clochettes pendantes — crème, roses ou violettes, parfois sur la même plante ! Ancien nom : « consoude » car on la croyait soigner les os.",
+      "es": "Planta grande y frondosa con campanitas colgantes — crema, rosa o violeta, ¡a veces en la misma planta! Antiguo nombre «sueldaconsuelda», por la creencia de que curaba huesos rotos."
+    }
+  },
+  {
+    id: "yarrow",
+    wiki: "Achillea_millefolium",
+    color: "#ffffff",
+    colorCategory: "white",
+    heightCm: 60,
+    family: "Daisy",
+    familyLatin: "Asteraceae",
+    blooms: "Jun–Oct",
+    where: ["Roadside verges", "Lawns and pasture", "Old meadows"],
+    names: {
+      "en": "Yarrow",
+      "zh-Hant": "蓍草",
+      "zh-Hans": "蓍草",
+      "yue": "蓍草",
+      "fr": "Achillée millefeuille",
+      "es": "Milenrama"
+    },
+    pronunciation: { pinyin: "shī cǎo", jyutping: "si1 cou2" },
+    latin: "Achillea millefolium",
+    description: {
+      "en": "Flat clusters of tiny white (sometimes pink) flowers above feathery leaves. Named after the Greek hero Achilles, who used it to heal soldiers' wounds!",
+      "zh-Hant": "羽毛狀的葉子上方，平平地開著一叢叢小白花（有時是粉紅）。名字來自希臘英雄阿基里斯，他曾用它治療士兵的傷口！",
+      "zh-Hans": "羽毛状的叶子上方，平平地开着一丛丛小白花（有时是粉红）。名字来自希腊英雄阿基里斯，他曾用它治疗士兵的伤口！",
+      "yue": "羽毛狀嘅葉上面，平平咁開住一叢叢嘅小白花（有時粉紅）。個名嚟自希臘英雄阿基里斯，佢曾經用佢嚟醫士兵嘅傷口！",
+      "fr": "Des bouquets aplatis de minuscules fleurs blanches (parfois roses) au-dessus de feuilles plumeuses. Nommée d'après le héros grec Achille, qui s'en servait pour soigner les blessures !",
+      "es": "Racimos planos de florecitas blancas (a veces rosas) sobre hojas plumosas. ¡Lleva el nombre del héroe griego Aquiles, que la usaba para curar heridas!"
+    }
+  },
+  {
+    id: "hogweed",
+    wiki: "Heracleum_sphondylium",
+    color: "#ffffff",
+    colorCategory: "white",
+    heightCm: 200,
+    family: "Carrot",
+    familyLatin: "Apiaceae",
+    blooms: "Jun–Sep",
+    where: ["Roadside verges", "Field edges", "Damp meadows"],
+    names: {
+      "en": "Common Hogweed",
+      "zh-Hant": "歐獨活",
+      "zh-Hans": "欧独活",
+      "yue": "歐獨活",
+      "fr": "Berce commune",
+      "es": "Branca ursina"
+    },
+    pronunciation: { pinyin: "ōu dú huó", jyutping: "au1 duk6 wut6" },
+    latin: "Heracleum sphondylium",
+    description: {
+      "en": "Big white umbrella flowers on tall hollow stalks. Hoverflies and beetles love it. NOT to be confused with the giant hogweed, whose sap can burn skin!",
+      "zh-Hant": "高高的中空莖上開著大大的白色傘狀花，食蚜蠅和甲蟲最愛。不要和巨型大豕草搞混了——後者的汁液會灼傷皮膚！",
+      "zh-Hans": "高高的中空茎上开着大大的白色伞状花，食蚜蝇和甲虫最爱。不要和巨型大豕草搞混了——后者的汁液会灼伤皮肤！",
+      "yue": "高高嘅中空莖上面開大大嘅白色傘形花，食蚜蠅同甲蟲最鍾意。唔好同巨型大豕草搞錯——果隻嘅汁液會灼傷皮膚！",
+      "fr": "De grandes ombelles blanches sur de hautes tiges creuses. Syrphes et coléoptères l'adorent. À ne PAS confondre avec la berce du Caucase, dont la sève brûle la peau !",
+      "es": "Grandes umbelas blancas sobre tallos huecos altos. Sírfidos y escarabajos la adoran. ¡NO confundir con la branca ursina gigante, cuya savia quema la piel!"
+    }
+  },
+  {
+    id: "hedgebindweed",
+    wiki: "Calystegia_sepium",
+    color: "#ffffff",
+    colorCategory: "white",
+    heightCm: 300,
+    family: "Bindweed",
+    familyLatin: "Convolvulaceae",
+    blooms: "Jun–Sep",
+    where: ["Hedgerows", "Garden walls", "Riverside thickets"],
+    names: {
+      "en": "Hedge Bindweed",
+      "zh-Hant": "籬天劍",
+      "zh-Hans": "篱天剑",
+      "yue": "籬天劍",
+      "fr": "Liseron des haies",
+      "es": "Corregüela mayor"
+    },
+    pronunciation: { pinyin: "lí tiān jiàn", jyutping: "lei4 tin1 gim3" },
+    latin: "Calystegia sepium",
+    description: {
+      "en": "Big snow-white trumpet flowers climb up hedges and walls in summer. Each flower lasts only a day, then twists shut — gardeners call them \"granny-pop-out-of-bed\"!",
+      "zh-Hant": "夏天，雪白色的大號角花爬上樹籬和牆壁。每朵只開一天就扭曲合起來——園丁叫它「奶奶跳起床」！",
+      "zh-Hans": "夏天，雪白色的大号角花爬上树篱和墙壁。每朵只开一天就扭曲合起来——园丁叫它「奶奶跳起床」！",
+      "yue": "夏天，雪白色嘅大號角花爬上樹籬同牆壁。每朵只開一日就扭曲合埋——園丁叫佢「嫲嫲跳起身」！",
+      "fr": "De grandes trompettes blanc neige escaladent haies et murs en été. Chaque fleur ne dure qu'un jour avant de se refermer — les jardiniers l'appellent « grand-mère qui saute du lit » !",
+      "es": "Grandes trompetas blancas trepan por setos y muros en verano. Cada flor solo dura un día y luego se enrosca — ¡los jardineros la llaman «abuela que salta de la cama»!"
+    }
+  },
+  {
+    id: "wildstrawberry",
+    wiki: "Fragaria_vesca",
+    color: "#ffffff",
+    colorCategory: "white",
+    heightCm: 15,
+    family: "Rose",
+    familyLatin: "Rosaceae",
+    blooms: "Apr–Jul",
+    where: ["Woodland clearings", "Hedge banks", "Old grassland"],
+    names: {
+      "en": "Wild Strawberry",
+      "zh-Hant": "野草莓",
+      "zh-Hans": "野草莓",
+      "yue": "野草莓",
+      "fr": "Fraisier des bois",
+      "es": "Fresa silvestre"
+    },
+    pronunciation: { pinyin: "yě cǎo méi", jyutping: "je5 cou2 mui4" },
+    latin: "Fragaria vesca",
+    description: {
+      "en": "Small white five-petalled flowers turn into the tiniest, sweetest red berries. They taste a hundred times better than shop strawberries — find one and try!",
+      "zh-Hant": "五片白色花瓣的小花，會結出最迷你、最甜的紅色小果子。比超市的草莓好吃一百倍——找到了試試看！",
+      "zh-Hans": "五片白色花瓣的小花，会结出最迷你、最甜的红色小果子。比超市的草莓好吃一百倍——找到了试试看！",
+      "yue": "五塊白色花瓣嘅小花，會結出最迷你、最甜嘅紅色小果。比超市嘅草莓好食一百倍——搵到試下啦！",
+      "fr": "De petites fleurs blanches à cinq pétales donnent les plus minuscules et plus sucrées des fraises rouges. Cent fois meilleures que celles du magasin — trouve-en une et goûte !",
+      "es": "Pequeñas flores blancas de cinco pétalos se convierten en las fresitas rojas más diminutas y dulces. ¡Saben cien veces mejor que las del super — encuéntrala y pruébala!"
+    }
+  },
+  {
+    id: "whitedeadnettle",
+    wiki: "Lamium_album",
+    color: "#ffffff",
+    colorCategory: "white",
+    heightCm: 60,
+    family: "Mint",
+    familyLatin: "Lamiaceae",
+    blooms: "Mar–Oct",
+    where: ["Hedge banks", "Roadside verges", "Garden corners"],
+    names: {
+      "en": "White Dead-nettle",
+      "zh-Hant": "白花野芝麻",
+      "zh-Hans": "白花野芝麻",
+      "yue": "白花野芝麻",
+      "fr": "Lamier blanc",
+      "es": "Ortiga muerta blanca"
+    },
+    pronunciation: { pinyin: "bái huā yě zhī ma", jyutping: "baak6 faa1 je5 zi1 maa4" },
+    latin: "Lamium album",
+    description: {
+      "en": "Looks just like a stinging nettle but has white hooded flowers and never stings — that's why it's called \"dead\". A favourite of long-tongued bumblebees.",
+      "zh-Hant": "外型就像會刺人的蕁麻，但開的是白色帽子花，而且不會刺人——所以才叫「死」蕁麻。長舌頭的大黃蜂最愛它。",
+      "zh-Hans": "外型就像会刺人的荨麻，但开的是白色帽子花，而且不会刺人——所以才叫「死」荨麻。长舌头的大黄蜂最爱它。",
+      "yue": "樣似會刺人嘅蕁麻，但係開白色帽子花，而且唔會刺人——所以叫「死」蕁麻。長脷嘅大黃蜂最鍾意佢。",
+      "fr": "Ressemble à l'ortie qui pique, mais a des fleurs blanches en cagoule et ne pique jamais — d'où « morte ». Adorée des bourdons à longue langue.",
+      "es": "Parece una ortiga que pica, pero tiene flores blancas en capucha y nunca pica — por eso se llama «muerta». Una favorita de los abejorros de lengua larga."
+    }
+  },
+  {
+    id: "commoncentaury",
+    wiki: "Centaurium_erythraea",
+    color: "#e85a93",
+    colorCategory: "pink",
+    heightCm: 30,
+    family: "Gentian",
+    familyLatin: "Gentianaceae",
+    blooms: "Jun–Sep",
+    where: ["Sand dunes", "Burren grassland (Clare)", "Sunny banks"],
+    names: {
+      "en": "Common Centaury",
+      "zh-Hant": "紅百金花",
+      "zh-Hans": "红百金花",
+      "yue": "紅百金花",
+      "fr": "Petite centaurée",
+      "es": "Centaurea menor"
+    },
+    pronunciation: { pinyin: "hóng bǎi jīn huā", jyutping: "hung4 baak3 gam1 faa1" },
+    latin: "Centaurium erythraea",
+    description: {
+      "en": "Tight clusters of bright pink star-flowers. They open only in sunshine — if it's cloudy, all the petals stay tightly shut!",
+      "zh-Hant": "鮮粉紅色的星星花密密地長在一起。只在有陽光時才打開——多雲的時候花瓣會全部緊緊合住！",
+      "zh-Hans": "鲜粉红色的星星花密密地长在一起。只在有阳光时才打开——多云的时候花瓣会全部紧紧合住！",
+      "yue": "鮮粉紅色嘅星星花密密咁長埋一齊。淨係有陽光時先會開——天陰時所有花瓣都會緊緊合埋！",
+      "fr": "Des bouquets serrés de fleurs en étoile rose vif. Elles ne s'ouvrent qu'au soleil — par temps couvert, tous les pétales restent bien fermés !",
+      "es": "Racimos compactos de flores estrelladas rosa intenso. ¡Solo se abren al sol — si está nublado, todos los pétalos se quedan bien cerrados!"
+    }
+  },
+  {
+    id: "commonmallow",
+    wiki: "Malva_sylvestris",
+    color: "#a64da6",
+    colorCategory: "pink",
+    heightCm: 100,
+    family: "Mallow",
+    familyLatin: "Malvaceae",
+    blooms: "Jun–Sep",
+    where: ["Roadside verges", "Waste ground", "Coastal banks"],
+    names: {
+      "en": "Common Mallow",
+      "zh-Hant": "歐錦葵",
+      "zh-Hans": "欧锦葵",
+      "yue": "歐錦葵",
+      "fr": "Mauve sylvestre",
+      "es": "Malva común"
+    },
+    pronunciation: { pinyin: "ōu jǐn kuí", jyutping: "au1 gam2 kwai4" },
+    latin: "Malva sylvestris",
+    description: {
+      "en": "Big pink-purple flowers with darker stripes leading bees to the centre — like a tiny landing strip! The round seed-pods are called \"cheeses\" by children.",
+      "zh-Hant": "大大的粉紫色花，深色條紋引導蜜蜂找到中央——像迷你跑道一樣！圓圓的種莢被小朋友叫做「起司」。",
+      "zh-Hans": "大大的粉紫色花，深色条纹引导蜜蜂找到中央——像迷你跑道一样！圆圆的种荚被小朋友叫做「起司」。",
+      "yue": "好大朵嘅粉紫色花，深色條紋指引蜜蜂搵到中央——好似迷你跑道！圓圓嘅種莢俾啲細路叫做「芝士」。",
+      "fr": "De grandes fleurs rose-violet avec des rayures plus foncées qui guident les abeilles vers le centre — comme une mini piste d'atterrissage ! Les fruits ronds, appelés « petits fromages » par les enfants.",
+      "es": "Grandes flores rosa-violeta con rayas oscuras que guían a las abejas hacia el centro — ¡como una pista de aterrizaje! Sus frutos redondos los niños los llaman «quesitos»."
+    }
+  },
+  {
+    id: "hempagrimony",
+    wiki: "Eupatorium_cannabinum",
+    color: "#c44d8c",
+    colorCategory: "pink",
+    heightCm: 150,
+    family: "Daisy",
+    familyLatin: "Asteraceae",
+    blooms: "Jul–Sep",
+    where: ["Wet ditches", "Riverbanks", "Marsh edges"],
+    names: {
+      "en": "Hemp-agrimony",
+      "zh-Hant": "大麻葉澤蘭",
+      "zh-Hans": "大麻叶泽兰",
+      "yue": "大麻葉澤蘭",
+      "fr": "Eupatoire chanvrine",
+      "es": "Eupatorio"
+    },
+    pronunciation: { pinyin: "dà má yè zé lán", jyutping: "daai6 maa4 jip6 zaak6 laan4" },
+    latin: "Eupatorium cannabinum",
+    description: {
+      "en": "Frothy clouds of dusty-pink flowers in wet places — and a magnet for butterflies in late summer! Painted ladies, peacocks and red admirals all stop by.",
+      "zh-Hant": "潮濕地方裡，毛茸茸的粉色花團——夏末蝴蝶的磁鐵！小紅蛺蝶、孔雀蛺蝶和紅艦蝶都會來光顧。",
+      "zh-Hans": "潮湿地方里，毛茸茸的粉色花团——夏末蝴蝶的磁铁！小红蛱蝶、孔雀蛱蝶和红舰蝶都会来光顾。",
+      "yue": "潮濕地方度，毛茸茸嘅粉色花團——夏末蝴蝶嘅磁石！小紅蛺蝶、孔雀蛺蝶同紅艦蝶都會嚟。",
+      "fr": "Des nuages mousseux de fleurs rose poussiéreux dans les endroits humides — un aimant à papillons en fin d'été ! Belles-dames, paons et vulcains s'y posent.",
+      "es": "Nubes esponjosas de flores rosa polvoriento en lugares húmedos — ¡un imán para mariposas a finales del verano! Vanesas, pavos reales y almirantes rojos visitan."
+    }
+  },
+  {
+    id: "pyramidalorchid",
+    wiki: "Anacamptis_pyramidalis",
+    color: "#c44d8c",
+    colorCategory: "pink",
+    heightCm: 50,
+    family: "Orchid",
+    familyLatin: "Orchidaceae",
+    blooms: "Jun–Aug",
+    where: ["Burren grassland (Clare)", "Sand dunes", "Calcareous banks"],
+    names: {
+      "en": "Pyramidal Orchid",
+      "zh-Hant": "金字塔蘭",
+      "zh-Hans": "金字塔兰",
+      "yue": "金字塔蘭",
+      "fr": "Orchis pyramidal",
+      "es": "Orquídea piramidal"
+    },
+    pronunciation: { pinyin: "jīn zì tǎ lán", jyutping: "gam1 zi6 taap3 laan4" },
+    latin: "Anacamptis pyramidalis",
+    description: {
+      "en": "Bright pink flowers stack into a perfect little pyramid — that's how it gets its name. Special butterflies and moths with very long tongues are its main pollinators.",
+      "zh-Hant": "鮮粉紅色的花疊成完美的小金字塔——名字就是這樣來的。長舌頭的蝴蝶和飛蛾是它主要的授粉者。",
+      "zh-Hans": "鲜粉红色的花叠成完美的小金字塔——名字就是这样来的。长舌头的蝴蝶和飞蛾是它主要的授粉者。",
+      "yue": "鮮粉紅色嘅花疊成完美嘅小金字塔——個名就係咁嚟。長脷嘅蝴蝶同飛蛾係佢主要嘅授粉者。",
+      "fr": "Des fleurs rose vif s'empilent en une parfaite petite pyramide — d'où son nom. Ses pollinisateurs principaux sont des papillons à très longue trompe.",
+      "es": "Flores rosa intenso apiladas en una perfecta pirámide pequeña — de ahí su nombre. Sus polinizadores principales son mariposas y polillas de lengua larguísima."
+    }
+  },
+  {
+    id: "greatwillowherb",
+    wiki: "Epilobium_hirsutum",
+    color: "#c44d8c",
+    colorCategory: "pink",
+    heightCm: 180,
+    family: "Evening Primrose",
+    familyLatin: "Onagraceae",
+    blooms: "Jul–Sep",
+    where: ["River banks", "Wet ditches", "Pond edges"],
+    names: {
+      "en": "Great Willowherb",
+      "zh-Hant": "毛柳葉菜",
+      "zh-Hans": "毛柳叶菜",
+      "yue": "毛柳葉菜",
+      "fr": "Épilobe hirsute",
+      "es": "Epilobio peludo"
+    },
+    pronunciation: { pinyin: "máo liǔ yè cài", jyutping: "mou4 lau5 jip6 coi3" },
+    latin: "Epilobium hirsutum",
+    description: {
+      "en": "Tall fuzzy plant with big purple-pink four-petalled flowers along streams. Old country name: \"codlins-and-cream\" — apparently it smelled like apples cooked in cream!",
+      "zh-Hant": "溪邊高高、毛茸茸的植物，開著大大的紫粉色四瓣花。鄉下舊名叫「蘋果加奶油」——據說它聞起來像奶油煮蘋果！",
+      "zh-Hans": "溪边高高、毛茸茸的植物，开着大大的紫粉色四瓣花。乡下旧名叫「苹果加奶油」——据说它闻起来像奶油煮苹果！",
+      "yue": "溪邊高高、毛茸茸嘅植物，開大大嘅紫粉色四瓣花。鄉下舊名叫「蘋果加忌廉」——聽講聞起嚟好似忌廉煮蘋果！",
+      "fr": "Une grande plante poilue aux grandes fleurs rose-violet à quatre pétales, au bord des ruisseaux. Vieux nom : « pommes-et-crème » — on disait qu'elle sentait la pomme cuite à la crème !",
+      "es": "Planta alta y peluda con grandes flores rosa-violeta de cuatro pétalos junto a los arroyos. Antiguo nombre rural: «manzanas con nata» — ¡decían que olía a manzanas cocidas!"
+    }
+  },
+  {
+    id: "seaholly",
+    wiki: "Eryngium_maritimum",
+    color: "#7d8df7",
+    colorCategory: "other",
+    heightCm: 50,
+    family: "Carrot",
+    familyLatin: "Apiaceae",
+    blooms: "Jul–Sep",
+    where: ["Sand dunes", "Shingle beaches", "Coastal banks"],
+    names: {
+      "en": "Sea Holly",
+      "zh-Hant": "海濱刺芹",
+      "zh-Hans": "海滨刺芹",
+      "yue": "海濱刺芹",
+      "fr": "Panicaut maritime",
+      "es": "Cardo marino"
+    },
+    pronunciation: { pinyin: "hǎi bīn cì qín", jyutping: "hoi2 ban1 ci3 kan4" },
+    latin: "Eryngium maritimum",
+    description: {
+      "en": "A spiky steel-blue plant of sandy beaches — looks like a holly bush but is really in the carrot family! Its waxy leaves keep it from drying out in the salty wind.",
+      "zh-Hant": "沙灘上多刺的鋼藍色植物——外型像冬青，其實是胡蘿蔔家族的成員！蠟質葉子能在鹹海風中防止乾枯。",
+      "zh-Hans": "沙滩上多刺的钢蓝色植物——外型像冬青，其实是胡萝卜家族的成员！蜡质叶子能在咸海风中防止干枯。",
+      "yue": "沙灘上多刺嘅鋼藍色植物——樣似冬青，但其實係胡蘿蔔家族！蠟質嘅葉可以喺鹹鹹嘅海風入面防止乾枯。",
+      "fr": "Une plante épineuse bleu acier des plages sablonneuses — on dirait un houx, mais c'est en fait de la famille de la carotte ! Ses feuilles cireuses la protègent du vent salé.",
+      "es": "Una planta espinosa azul acero de playas arenosas — ¡parece un acebo pero es de la familia de la zanahoria! Sus hojas cerosas la protegen del viento salado."
+    }
+  },
+  {
+    id: "heartsease",
+    wiki: "Viola_tricolor",
+    color: "#9b59b6",
+    colorCategory: "other",
+    heightCm: 25,
+    family: "Violet",
+    familyLatin: "Violaceae",
+    blooms: "Apr–Sep",
+    where: ["Sandy fields", "Coastal grassland", "Disturbed ground"],
+    names: {
+      "en": "Heartsease (Wild Pansy)",
+      "zh-Hant": "三色堇",
+      "zh-Hans": "三色堇",
+      "yue": "三色堇",
+      "fr": "Pensée sauvage",
+      "es": "Pensamiento silvestre"
+    },
+    pronunciation: { pinyin: "sān sè jǐn", jyutping: "saam1 sik1 gan2" },
+    latin: "Viola tricolor",
+    description: {
+      "en": "A tiny wild pansy with purple, yellow and white all on the same flower — three faces in one! It's the wild ancestor of the big garden pansies.",
+      "zh-Hant": "迷你的野生三色堇，同一朵花上有紫、黃、白三色——三張臉合一！它是花園大三色堇的野生祖先。",
+      "zh-Hans": "迷你的野生三色堇，同一朵花上有紫、黄、白三色——三张脸合一！它是花园大三色堇的野生祖先。",
+      "yue": "迷你嘅野生三色堇，同一朵花上面有紫、黃、白三色——三張面合一！佢就係花園入面大嘅三色堇嘅野生祖先。",
+      "fr": "Une petite pensée sauvage aux trois couleurs sur une même fleur — violet, jaune et blanc, trois visages à la fois ! C'est l'ancêtre sauvage des grandes pensées de jardin.",
+      "es": "Una pequeña pensamiento silvestre con tres colores en una misma flor — violeta, amarillo y blanco, ¡tres caras a la vez! Es el ancestro salvaje de los pensamientos de jardín."
+    }
   }
 ];
 
@@ -2345,7 +3072,7 @@ window.SPOTS = [
       "fr": "Un paysage calcaire magique sur la côte ouest — plus de 70 % des fleurs natives d'Irlande y poussent, dont 24 des 28 orchidées indigènes. Plantes arctiques, alpines et méditerranéennes y cohabitent !",
       "es": "Un paisaje mágico de caliza en la costa oeste — más del 70% de las flores nativas de Irlanda crecen aquí, incluidas 24 de 28 orquídeas. ¡Plantas árticas, alpinas y mediterráneas conviven aquí!"
     },
-    flowers: ["springgentian", "mountainavens", "bloodycranesbill", "earlypurpleorchid", "spottedorchid", "beeorchid", "wildthyme", "milkwort", "birdsfoottrefoil", "cowslip", "ladysbedstraw"]
+    flowers: ["springgentian", "mountainavens", "bloodycranesbill", "earlypurpleorchid", "spottedorchid", "beeorchid", "pyramidalorchid", "wildthyme", "milkwort", "birdsfoottrefoil", "cowslip", "ladysbedstraw", "commoncentaury"]
   },
   {
     id: "killarneynp",
@@ -2359,7 +3086,7 @@ window.SPOTS = [
       "fr": "Forêts de chênes anciennes, ruisseaux vifs et grands lacs. En avril et mai, le sol se couvre de jacinthes, d'ail des ours et d'anémones des bois — pure magie !",
       "es": "Antiguos bosques de robles, arroyos y grandes lagos. En abril y mayo, el suelo se cubre de jacintos silvestres, ajo de oso y anémonas — ¡pura magia!"
     },
-    flowers: ["bluebell", "wildgarlic", "woodanemone", "primrose", "lessercelandine", "foxglove", "woodsorrel", "honeysuckle", "stitchwort"]
+    flowers: ["bluebell", "wildgarlic", "woodanemone", "primrose", "lessercelandine", "foxglove", "woodsorrel", "honeysuckle", "stitchwort", "wilddaffodil", "sweetviolet", "yellowarchangel"]
   },
   {
     id: "connemara",
@@ -2401,7 +3128,7 @@ window.SPOTS = [
       "fr": "Le plus grand parc national d'Irlande, juste au sud de Dublin. Montagnes couvertes de bruyère, vallées profondes avec digitales, et tourbières aux rosolis et grassettes.",
       "es": "El parque nacional más grande de Irlanda, al sur de Dublín. Montañas cubiertas de brezo, valles profundos con dedaleras y turberas con rocíos del sol y grasillas."
     },
-    flowers: ["heather", "foxglove", "bogasphodel", "roundleavedsundew", "butterwort", "tormentil", "gorse", "bogcotton", "rosebaywillowherb"]
+    flowers: ["heather", "foxglove", "bogasphodel", "roundleavedsundew", "butterwort", "tormentil", "gorse", "bogcotton", "rosebaywillowherb", "lousewort", "hempagrimony"]
   },
   {
     id: "wildnephin",
@@ -2429,7 +3156,7 @@ window.SPOTS = [
       "fr": "L'un des plus grands parcs urbains d'Europe. Pelouses pleines de pâquerettes et de pissenlits, haies d'aubépine et de prunellier, vieux arbres couverts de lierre. Idéal pour débuter !",
       "es": "Uno de los mayores parques urbanos de Europa. Céspedes llenos de margaritas y dientes de león, setos de espino blanco y endrino, y árboles viejos cubiertos de hiedra. Ideal para empezar."
     },
-    flowers: ["daisy", "dandelion", "hawthorn", "blackthorn", "ivy", "buttercup", "whiteclover", "redclover", "selfheal", "cuckooflower"]
+    flowers: ["daisy", "dandelion", "hawthorn", "blackthorn", "ivy", "buttercup", "whiteclover", "redclover", "selfheal", "cuckooflower", "yarrow", "catsear", "whitedeadnettle"]
   },
   {
     id: "cliffsmoher",
@@ -2443,7 +3170,7 @@ window.SPOTS = [
       "fr": "Imposantes falaises atlantiques couvertes de coussins roses d'armérie et de silène maritime blanc en mai-juin. Le vent salé sauvage façonne tout ce qui pousse ici !",
       "es": "Imponentes acantilados atlánticos cubiertos de cojines rosas de clavelina y collejas blancas en mayo y junio. ¡El viento salado moldea todo lo que crece aquí!"
     },
-    flowers: ["thrift", "seacampion", "bluebell", "primrose", "birdsfoottrefoil", "harebell", "wildcarrot"]
+    flowers: ["thrift", "seacampion", "bluebell", "primrose", "birdsfoottrefoil", "harebell", "wildcarrot", "seaholly", "yellowhornedpoppy", "sheepsbit"]
   },
   {
     id: "howthhead",

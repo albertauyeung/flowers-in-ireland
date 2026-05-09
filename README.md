@@ -2,7 +2,7 @@
 
 A multilingual web app for kids aged 5–12 to discover the wildflowers of Ireland.
 
-- 80 wildflower species with kid-friendly descriptions, photos, and where to find them
+- 105 wildflower species with kid-friendly descriptions, photos, and where to find them
 - 6 languages: English, 繁體中文, 简体中文, 廣東話, Français, Español
 - 9 botanical hotspots around the island (Burren, Killarney NP, Connemara…)
 - Pronunciation guides (pinyin, jyutping)
@@ -36,7 +36,7 @@ flowers-in-ireland/
 │   ├── flowers.js        # 80 flowers + hotspots data (the source of truth)
 │   ├── app.js            # routing, rendering, photo loader, feedback wiring
 │   └── config.js         # paste-in slot for the optional feedback Worker URL
-├── flowers/              # 80 generated static HTML pages, one per flower (for SEO)
+├── flowers/              # 105 generated static HTML pages, one per flower (for SEO)
 ├── scripts/
 │   └── build-pages.js    # regenerates flowers/*.html and sitemap.xml from flowers.js
 ├── sitemap.xml           # generated; lists every flower URL plus SPA routes
