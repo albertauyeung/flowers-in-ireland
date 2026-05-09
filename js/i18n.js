@@ -63,7 +63,8 @@ window.I18N = {
     statFlowers: "flowers",
     statLanguages: "languages",
     statSpots: "hotspots",
-    showingFiltered: "Showing {n} of {total} flowers"
+    showingFiltered: "Showing {n} of {total} flowers",
+    inSeason: "In season"
   },
 
   "zh-Hant": {
@@ -129,7 +130,8 @@ window.I18N = {
     statFlowers: "種花",
     statLanguages: "種語言",
     statSpots: "個賞花點",
-    showingFiltered: "顯示 {n} / {total} 種花"
+    showingFiltered: "顯示 {n} / {total} 種花",
+    inSeason: "正在開花"
   },
 
   "zh-Hans": {
@@ -195,7 +197,8 @@ window.I18N = {
     statFlowers: "种花",
     statLanguages: "种语言",
     statSpots: "个赏花点",
-    showingFiltered: "显示 {n} / {total} 种花"
+    showingFiltered: "显示 {n} / {total} 种花",
+    inSeason: "正在开花"
   },
 
   "yue": {
@@ -261,7 +264,8 @@ window.I18N = {
     statFlowers: "種花",
     statLanguages: "種語言",
     statSpots: "個賞花地點",
-    showingFiltered: "顯示緊 {n} / {total} 種花"
+    showingFiltered: "顯示緊 {n} / {total} 種花",
+    inSeason: "當造緊"
   },
 
   "fr": {
@@ -327,7 +331,8 @@ window.I18N = {
     statFlowers: "fleurs",
     statLanguages: "langues",
     statSpots: "lieux d'observation",
-    showingFiltered: "Affichage de {n} sur {total} fleurs"
+    showingFiltered: "Affichage de {n} sur {total} fleurs",
+    inSeason: "En saison"
   },
 
   "es": {
@@ -393,7 +398,8 @@ window.I18N = {
     statFlowers: "flores",
     statLanguages: "idiomas",
     statSpots: "lugares",
-    showingFiltered: "Mostrando {n} de {total} flores"
+    showingFiltered: "Mostrando {n} de {total} flores",
+    inSeason: "En temporada"
   }
 };
 

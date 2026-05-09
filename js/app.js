@@ -267,10 +267,69 @@
     return flower.names[state.lang] || flower.names.en;
   }
 
+  // ---------- Bloom-season ranking ----------
+  // Parse a `blooms` string like "Apr–Jun" / "May" / "All year (peak Mar–Jun)"
+  // into an array of month numbers (1–12). Returns [] if unparseable.
+  const MONTH_TO_NUM = {
+    jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
+    jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12
+  };
+  const bloomCache = new Map();
+  function parseBlooms(s) {
+    if (!s) return [];
+    if (bloomCache.has(s)) return bloomCache.get(s);
+    let result = [];
+    if (/all\s*year/i.test(s)) {
+      result = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    } else {
+      const range = s.match(/([A-Za-z]{3,})[\s–—\-]+([A-Za-z]{3,})/);
+      if (range) {
+        const a = MONTH_TO_NUM[range[1].slice(0, 3).toLowerCase()];
+        const b = MONTH_TO_NUM[range[2].slice(0, 3).toLowerCase()];
+        if (a && b) {
+          let i = a;
+          for (let n = 0; n < 12; n++) {
+            result.push(i);
+            if (i === b) break;
+            i = i === 12 ? 1 : i + 1;
+          }
+        }
+      } else {
+        const single = s.match(/([A-Za-z]{3,})/);
+        if (single) {
+          const m = MONTH_TO_NUM[single[1].slice(0, 3).toLowerCase()];
+          if (m) result = [m];
+        }
+      }
+    }
+    bloomCache.set(s, result);
+    return result;
+  }
+  function circMonthDist(a, b) {
+    const d = Math.abs(a - b);
+    return Math.min(d, 12 - d);
+  }
+  // 0 = in bloom this month; larger = farther away. 99 = no info.
+  function bloomDistance(flower, monthIdx) {
+    const months = parseBlooms(flower.blooms);
+    if (!months.length) return 99;
+    let best = 12;
+    for (const m of months) {
+      const d = circMonthDist(m, monthIdx);
+      if (d < best) best = d;
+      if (best === 0) return 0;
+    }
+    return best;
+  }
+  function isInSeason(flower, monthIdx) {
+    return bloomDistance(flower, monthIdx) === 0;
+  }
+
   // ---------- Gallery ----------
   function renderGallery() {
     const grid = document.getElementById("gallery-grid");
     const total = FLOWERS.length;
+    const currentMonth = new Date().getMonth() + 1;
     const filtered = FLOWERS.filter((f) => {
       if (state.colorFilter !== "all" && f.colorCategory !== state.colorFilter) return false;
       if (state.search) {
@@ -280,7 +339,16 @@
       }
       return true;
     });
-    renderFlowerGrid(grid, filtered);
+    // Rank by closeness to today's month, then alphabetically by local name.
+    // Flowers in bloom right now bubble to the top; the rest follow in
+    // distance order so "what's about to bloom" is also discoverable.
+    filtered.sort((a, b) => {
+      const da = bloomDistance(a, currentMonth);
+      const db = bloomDistance(b, currentMonth);
+      if (da !== db) return da - db;
+      return localName(a).localeCompare(localName(b));
+    });
+    renderFlowerGrid(grid, filtered, currentMonth);
 
     document.querySelectorAll("#color-filter .chip").forEach((chip) => {
       chip.classList.toggle("active", chip.dataset.color === state.colorFilter);
@@ -305,18 +373,20 @@
     }
   }
 
-  function renderFlowerGrid(container, flowers) {
+  function renderFlowerGrid(container, flowers, currentMonth) {
     container.innerHTML = "";
+    if (currentMonth == null) currentMonth = new Date().getMonth() + 1;
     flowers.forEach((flower) => {
       const name = localName(flower);
       const pron = pronunciationFor(flower);
       const showEnglish = state.lang !== "en";
+      const inSeason = isInSeason(flower, currentMonth);
       const card = document.createElement("a");
       card.className = "flower-card";
       card.href = flowerHref(flower.id);
       card.setAttribute("aria-label", name);
       card.innerHTML = `
-        <div class="photo skeleton"><img alt="" loading="lazy" decoding="async"></div>
+        <div class="photo skeleton"><img alt="" loading="lazy" decoding="async">${inSeason ? `<span class="season-badge" title="${escapeHtml(t("inSeason"))}">🌸 ${escapeHtml(t("inSeason"))}</span>` : ""}</div>
         <p class="name">${escapeHtml(name)}</p>
         ${pron ? `<p class="pronunciation">${escapeHtml(pron)}</p>` : ""}
         ${showEnglish ? `<p class="english-name">${escapeHtml(flower.names.en)}</p>` : ""}
