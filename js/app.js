@@ -316,7 +316,7 @@
       card.href = flowerHref(flower.id);
       card.setAttribute("aria-label", name);
       card.innerHTML = `
-        <div class="photo skeleton"><img alt="" loading="lazy"></div>
+        <div class="photo skeleton"><img alt="" loading="lazy" decoding="async"></div>
         <p class="name">${escapeHtml(name)}</p>
         ${pron ? `<p class="pronunciation">${escapeHtml(pron)}</p>` : ""}
         ${showEnglish ? `<p class="english-name">${escapeHtml(flower.names.en)}</p>` : ""}
@@ -399,7 +399,7 @@
 
     detailEl.innerHTML = `
       <div>
-        <div class="photo skeleton"><img alt="" loading="lazy"></div>
+        <div class="photo skeleton"><img alt="" loading="eager" decoding="async" fetchpriority="high"></div>
         <p class="photo-credit">${escapeHtml(t("photoBy"))} <a href="#" target="_blank" rel="noopener" class="src-link">Wikipedia</a> · ${escapeHtml(t("photoSource"))}</p>
       </div>
       <div>
@@ -456,7 +456,7 @@
         thumb.setAttribute("aria-label", localName(rf));
         const rPron = pronunciationFor(rf);
         thumb.innerHTML = `
-          <div class="photo skeleton"><img alt="" loading="lazy"></div>
+          <div class="photo skeleton"><img alt="" loading="lazy" decoding="async"></div>
           <span class="thumb-name">${escapeHtml(localName(rf))}</span>
           ${rPron ? `<span class="thumb-pron">${escapeHtml(rPron)}</span>` : ""}
         `;
@@ -548,7 +548,7 @@
     const total = state.quiz.questions.length;
     area.innerHTML = `
       <div class="quiz-status">${escapeHtml(t("quizQuestionOf").replace("{n}", state.quiz.index + 1).replace("{total}", total))}</div>
-      <div class="quiz-photo skeleton"><img alt="" loading="lazy"></div>
+      <div class="quiz-photo skeleton"><img alt="" loading="eager" decoding="async" fetchpriority="high"></div>
       <p class="lead" style="margin:0 0 0.6rem;">${escapeHtml(t("quizQuestion"))}</p>
       <div class="quiz-feedback" aria-live="polite"></div>
       <div class="quiz-options">
@@ -646,7 +646,7 @@
         thumb.setAttribute("aria-label", localName(flower));
         const pron = pronunciationFor(flower);
         thumb.innerHTML = `
-          <div class="photo skeleton"><img alt="" loading="lazy"></div>
+          <div class="photo skeleton"><img alt="" loading="lazy" decoding="async"></div>
           <span class="thumb-name">${escapeHtml(localName(flower))}</span>
           ${pron ? `<span class="thumb-pron">${escapeHtml(pron)}</span>` : ""}
         `;

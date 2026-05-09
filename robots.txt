@@ -1,4 +1,23 @@
+# Flowers in Ireland — robots.txt
+# https://albertauyeung.github.io/flowers-in-ireland/
+
 User-agent: *
+Allow: /
+
+# Major search engine bots — explicit allow.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 Sitemap: https://albertauyeung.github.io/flowers-in-ireland/sitemap.xml

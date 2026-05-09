@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Flowers in Ireland: a multilingual wildflower guide for kids">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f5d8"/>
+      <stop offset="55%" stop-color="#fef0f4"/>
+      <stop offset="100%" stop-color="#fffaea"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#79c47a"/>
+      <stop offset="100%" stop-color="#3d8b41"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- Hills -->
+  <path d="M0,520 C200,440 400,460 620,500 C800,535 1000,470 1200,500 L1200,630 L0,630 Z" fill="url(#hill)" opacity="0.85"/>
+  <path d="M0,560 C220,520 420,560 660,540 C880,525 1080,560 1200,545 L1200,630 L0,630 Z" fill="#2f6f33" opacity="0.85"/>
+
+  <!-- Sun -->
+  <circle cx="970" cy="170" r="70" fill="#f9ca24"/>
+  <circle cx="970" cy="170" r="100" fill="#f9ca24" opacity="0.25"/>
+
+  <!-- Tiny flowers across the hills -->
+  <g>
+    <circle cx="850" cy="540" r="8" fill="#d6336c"/>
+    <circle cx="900" cy="555" r="6" fill="#ffffff" stroke="#d6336c" stroke-width="2"/>
+    <circle cx="1080" cy="535" r="7" fill="#f9ca24"/>
+    <circle cx="1120" cy="560" r="6" fill="#686de0"/>
+    <circle cx="700" cy="555" r="7" fill="#d6336c"/>
+    <circle cx="660" cy="565" r="5" fill="#f9ca24"/>
+    <circle cx="500" cy="555" r="6" fill="#ffffff" stroke="#d6336c" stroke-width="2"/>
+  </g>
+
+  <!-- Big featured flower (daisy / wildflower) on the left -->
+  <g transform="translate(220 380)">
+    <path d="M0 60 Q-3 110 0 180" stroke="#3d8b41" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M0 120 Q-44 105 -60 138 Q-32 148 0 134 Z" fill="#6ab04c"/>
+    <path d="M0 150 Q44 138 60 168 Q32 180 0 162 Z" fill="#79c47a"/>
+    <g transform="translate(0 0)" fill="#ffffff" stroke="#d6336c" stroke-width="2.5">
+      <ellipse cx="0" cy="-58" rx="20" ry="36"/>
+      <ellipse cx="42" cy="-40" rx="20" ry="36" transform="rotate(45 42 -40)"/>
+      <ellipse cx="58" cy="0" rx="20" ry="36" transform="rotate(90 58 0)"/>
+      <ellipse cx="42" cy="40" rx="20" ry="36" transform="rotate(135 42 40)"/>
+      <ellipse cx="0" cy="58" rx="20" ry="36"/>
+      <ellipse cx="-42" cy="40" rx="20" ry="36" transform="rotate(45 -42 40)"/>
+      <ellipse cx="-58" cy="0" rx="20" ry="36" transform="rotate(90 -58 0)"/>
+      <ellipse cx="-42" cy="-40" rx="20" ry="36" transform="rotate(135 -42 -40)"/>
+    </g>
+    <circle cx="0" cy="0" r="30" fill="#f9ca24"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#b88800" stroke-width="2.5"/>
+  </g>
+
+  <!-- Title block -->
+  <text x="370" y="180" font-family="'Comic Sans MS','Quicksand','Trebuchet MS',sans-serif" font-size="96" font-weight="800" fill="#d6336c">Flowers in Ireland</text>
+  <text x="370" y="240" font-family="'Comic Sans MS','Quicksand',sans-serif" font-size="38" font-weight="700" fill="#2c5e1a">A multilingual wildflower guide for kids</text>
+  <text x="370" y="300" font-family="'Comic Sans MS','Quicksand',sans-serif" font-size="28" fill="#3a3f55">80 species · photos · pronunciation guides</text>
+  <text x="370" y="340" font-family="'Comic Sans MS','Quicksand',sans-serif" font-size="26" fill="#1d6fb8">English · 華文 · 粵語 · Français · Español</text>
+</svg>

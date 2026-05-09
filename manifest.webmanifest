@@ -1,0 +1,21 @@
+{
+  "name": "Flowers in Ireland — A Multilingual Wildflower Guide for Kids",
+  "short_name": "Flowers in Ireland",
+  "description": "Discover 80 wildflowers you can spot in Ireland — bluebells, primroses, foxgloves, gorse and more. Kid-friendly descriptions, photos, pronunciation guides and where-to-find maps in 6 languages.",
+  "start_url": "/flowers-in-ireland/",
+  "scope": "/flowers-in-ireland/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#e8f5d8",
+  "theme_color": "#d6336c",
+  "lang": "en",
+  "categories": ["education", "kids", "nature", "books", "reference"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
