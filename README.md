@@ -33,7 +33,7 @@ flowers-in-ireland/
 ├── css/styles.css        # all styles
 ├── js/
 │   ├── i18n.js           # UI strings × 6 languages
-│   ├── flowers.js        # 80 flowers + hotspots data (the source of truth)
+│   ├── flowers.js        # 105 flowers + hotspots data (the source of truth)
 │   ├── app.js            # routing, rendering, photo loader, feedback wiring
 │   └── config.js         # paste-in slot for the optional feedback Worker URL
 ├── flowers/              # 105 generated static HTML pages, one per flower (for SEO)
