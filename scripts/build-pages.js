@@ -119,7 +119,7 @@ function commonHeadAssets({ stylesheetHref, manifestHref, iconHref, jsPrefix }) 
   <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
   <link rel="dns-prefetch" href="https://en.wikipedia.org" />
   <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
-  <link rel="dns-prefetch" href="https://cloud.umami.is" />
+  <link rel="dns-prefetch" href="https://trefly.vercel.app" />
   <link rel="manifest" href="${escapeAttr(manifestHref)}" />
   <link rel="icon" href="${escapeAttr(iconHref)}" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="${escapeAttr(iconHref)}" />
@@ -172,7 +172,7 @@ function commonFooter() {
   </footer>`;
 }
 
-const ANALYTICS = `  <script defer src="https://cloud.umami.is/script.js" data-website-id="0c30afdf-7301-47b0-8a70-24b0a10719ca"></script>`;
+const ANALYTICS = `  <script defer data-site="RX8JVwKmdCw" src="https://trefly.vercel.app/t.js"></script>`;
 
 // ---------- Per-flower page ----------
 function renderFlowerPage(flower) {
