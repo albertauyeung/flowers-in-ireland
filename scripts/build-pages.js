@@ -11,7 +11,7 @@
  *   3. /spots.html        — static page listing all botanical hotspots,
  *                           with per-spot ItemList schema linking to
  *                           flower detail pages.
- *   4. /about.html        — static About page (sources, mission, safety).
+ *   4. /about.html        — static About page (sources, mission, safety, privacy).
  *   5. /404.html          — friendly 404 with sitemap/homepage links.
  *   6. index.html         — the marker block
  *                           "<!-- BUILD:FLOWER_LIST_START --> ...
@@ -167,6 +167,7 @@ function commonFooter() {
       <a href="${SITE_URL}" data-i18n="navFlowers">Flowers</a> ·
       <a href="${SITE_URL}spots.html" data-i18n="navSpots">Where to find</a> ·
       <a href="${SITE_URL}about.html" data-i18n="navAbout">About</a> ·
+      <a href="${SITE_URL}about.html#privacy" data-i18n="navPrivacy">Privacy</a> ·
       <a href="${SITE_URL}sitemap.xml">Sitemap</a>
     </p>
   </footer>`;
@@ -506,10 +507,19 @@ ${hreflangBlock(canonical)}
   <meta property="og:image:type" content="image/svg+xml" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Flowers in Ireland — a colourful kids' guide to 100+ Irish wildflowers in 6 languages" />
+  <meta property="og:locale" content="en_IE" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="yue_HK" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escapeAttr(title)}" />
   <meta name="twitter:description" content="${escapeAttr(description)}" />
   <meta name="twitter:image" content="${OG_IMAGE}" />
+  <meta name="twitter:image:alt" content="Flowers in Ireland — a colourful kids' guide to 100+ Irish wildflowers in 6 languages" />
 
 ${commonHeadAssets({
   stylesheetHref: "css/styles.css",
@@ -551,13 +561,20 @@ ${commonHeader()}
           <li><a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> — &ldquo;Learn more&rdquo; links</li>
         </ul>
 
-        <h2>Languages we support</h2>
-        <p>Flowers in Ireland is available in English, 繁體中文, 简体中文, 廣東話 (with jyutping), Français and Español, with pinyin pronunciation guides for the Chinese names. <a href="./">Open the app</a> to switch language.</p>
+        <h2 id="privacy" data-i18n="privacyHeading">Privacy</h2>
+        <p data-i18n="privacyP1">Flowers in Ireland is free and ad-free. We don't ask for your name, email or any account.</p>
+        <p data-i18n="privacyP2">We use Trefly, our own self-hosted analytics, to count visits. Trefly is cookieless: no cookie is set on your device, and no IP address or user-agent string is stored on the server. It records only the page you viewed, the host of the referring website (no full URL), your country, browser, operating system and device family. A daily-rotating hash counts unique daily visitors without identifying you, and the hash resets every 24 hours so you cannot be tracked across days.</p>
+        <p data-i18n="privacyP3">Don't want to be counted? Most ad-blockers and tracker-blocking browser extensions will block trefly.vercel.app/t.js and stop the count.</p>
+        <p data-i18n="privacyP4">Other third parties: flower photos and &ldquo;Learn more&rdquo; links load directly from Wikimedia Commons and Wikipedia, which see your IP only when you visit those pages. The optional feedback form on this page sends your message to a Cloudflare Worker that opens a GitHub issue; spam is filtered by a Cloudflare Turnstile widget that loads only when you start typing.</p>
+        <p data-i18n="privacyP5">For privacy questions, contact: [TODO add email]. This notice is informational and not legal advice.</p>
 
-        <h2>Explore more</h2>
+        <h2 data-i18n="languagesHeading">Languages we support</h2>
+        <p data-i18n="languagesBody">Flowers in Ireland is available in English, 繁體中文, 简体中文, 廣東話 (with jyutping), Français and Español, with pinyin pronunciation guides for the Chinese names. Open the app to switch language.</p>
+
+        <h2 data-i18n="exploreHeading">Explore more</h2>
         <ul>
-          <li><a href="./">Browse every wildflower in the guide</a></li>
-          <li><a href="spots.html">Where to find flowers in Ireland</a> — 9 botanical hotspots</li>
+          <li><a href="./" data-i18n="exploreBrowse">Browse every wildflower in the guide</a></li>
+          <li><a href="spots.html"><span data-i18n="exploreSpots">Where to find flowers in Ireland</span> — <span data-i18n="exploreSpotsCount">9 botanical hotspots</span></a></li>
         </ul>
 
         <p class="small" data-i18n="aboutCredit">Made with love for curious young botanists. 🌷</p>
