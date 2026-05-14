@@ -74,7 +74,15 @@ function escapeAttr(s) { return escapeHtml(s); }
 function trim(s, n) {
   if (!s) return "";
   if (s.length <= n) return s;
-  return s.slice(0, n - 1).trimEnd() + "…";
+  const cut = s.slice(0, n - 1);
+  // Prefer a word boundary within the last ~40% of the window so a
+  // single long word near the end (e.g. a Latin family name) doesn't
+  // make us collapse the whole description back to its first word.
+  const lastSpace = cut.lastIndexOf(" ");
+  if (lastSpace > Math.floor((n - 1) * 0.6)) {
+    return cut.slice(0, lastSpace).trimEnd() + "…";
+  }
+  return cut.trimEnd() + "…";
 }
 
 function flowerPageUrl(flowerId) {
