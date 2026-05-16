@@ -1,0 +1,41 @@
+name: Verify generated pages
+
+# Catches drift between js/flowers.js and the generated artefacts
+# (flowers/*.html, sitemap.xml, spots.html, about.html, 404.html, the
+# noscript marker block in index.html). Re-runs the generator and fails
+# if anything changes.
+#
+# <lastmod> values in sitemap.xml use today's date and would otherwise
+# always differ — we ignore those single-line hunks via `git diff -I`.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate static pages
+        run: node scripts/build-pages.js
+
+      - name: Check committed files match generator output
+        run: |
+          if ! git diff --quiet -I '<lastmod>'; then
+            echo "::error::Generated HTML drifts from js/flowers.js. Run 'node scripts/build-pages.js' locally and commit."
+            git diff --stat
+            git diff -I '<lastmod>'
+            exit 1
+          fi
+          if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+            echo "::error::Generator produced new untracked files. Commit them."
+            git ls-files --others --exclude-standard
+            exit 1
+          fi
